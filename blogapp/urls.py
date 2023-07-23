@@ -28,9 +28,9 @@ urlpatterns = [
                   path('update/<int:id>', update_post),
                   path('delete/<int:id>', delete_post),
                   path("", register_request, name="register"),
-                  path("login", login_request, name="login"),
-                  path("logout", logout_request, name="logout"),
-                  path("myarticles", get_my_articles, name="myarticles"),
-                  path('test', create_post),
+                  path("login/", login_request, name="login"),
+                  path("logout/", logout_request, name="logout"),
+                  path("myarticles/", get_my_articles, name="myarticles"),
+                  path('test/', create_post),
                   path('tinymce/', include('tinymce.urls')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
