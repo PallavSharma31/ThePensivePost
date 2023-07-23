@@ -32,5 +32,5 @@ To set up the Semantic Search Engine project, follow these steps:
 
   5. Start the Django development server.
 
-   ```shell
-    python manage.py runserver  
+     ```shell
+     python manage.py runserver  
